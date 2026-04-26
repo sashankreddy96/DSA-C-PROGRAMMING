@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+struct employee
+{
+	int sal;
+	char name[20];
+	float exp;
+}  s1={10000,"raju",2.5},s2;
+int main()
+{
+	struct employee s3={20000,"ram",3.0}, s4;
+	s2.sal=25000;
+	strcpy(s2.name,"bobby");
+	s2.exp=4.5;
+	printf("enter s4 sal");
+	scanf("%d",&s4.sal);
+	printf("enter s4 name");
+	scanf("%s",&s4.name);
+	printf("enter s4 experience");
+	scanf("%f",&s4.exp);
+	printf("employee structure are:\n");
+	printf("\n %d %s %f ",s1.sal,s1.name,s1.exp);
+		printf("\n %d %s %f ",s2.sal,s2.name,s2.exp);
+			printf("\n %d %s %f ",s3.sal,s3.name,s3.exp);
+				printf("\n %d %s %f ",s4.sal,s4.name,s4.exp);
+				return 0;
+	}
